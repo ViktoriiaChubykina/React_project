@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ---------------- Глобальні стилі ---------------- */
+
+.app {
+    font-family: "Montserrat";
+}
+
+.home-page {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+
+.home-page::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/img/photo.jpg") center/cover no-repeat;
+    opacity: 0.2;
+    z-index: -9999999;
+}
+
+/* ---------------- Header ---------------- */
+
+header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    z-index: 9999;
+}
+
+/* --- Logo --- */
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 28px 0 0;
+}
+
+.header-logo img {
+    width: 200px;
+    height: auto;
+}
+
+.header-logo h1 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+/* ---------------- Images ---------------- */
+
+img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* ---------------- Заголовки, текст ---------------- */
+
+h1 {
+    font-size: 88px;
+    margin: 0;
+    padding: 0;
+    line-height: 88px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+span {
+    font-size: 92px;
+    color: #3f579d;
+}
+
+/* --------- ОБ'ЄДНАНІ p (варіант B) --------- */
+p {
+    font-size: 16px;
+    color: #3f579d;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+/* ---------------- Header nav ---------------- */
+
+header nav {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 12px 0;
+    top: 0;
+    z-index: 9999;
+}
+
+header nav .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+header nav .nav-logo p {
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+header nav img {
+    width: 40px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    padding: 0px;
+    margin-left: 20px;
+}
+
+header nav ul li .header-button {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+header nav ul li .header-button:hover {
+    color: #3f579d;
+}
+
+/* ---------------- Buttons ---------------- */
+
+.header-buttons {
+    display: flex;
+    gap: 20px;
+    margin-right: 5%;
+    text-decoration: "none";
+}
+
+.header-buttons-2 {
+    background-color: #f0f3fc;
+    color: #3f579d;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-decoration: "none";
+}
+
+.button {
+    background-color: #b6c4ed;
+    color: #3f579d;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-decoration: "none";
+}
+
+.button:hover,
+.header-buttons-2:hover {
+    background-color: #3f579d;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+}
+
+.nav-link:visited {
+    color: #FFD700;
+}
+
+/* ---------------- Main block ---------------- */
+
+main {
+    margin-top: 120px;
+}
+
+.main-info {
+    display: flex;
+    margin: 120px 80px 0 80px;
+}
+
+.main-info .about-goal {
+    margin-top: 60px;
+}
+
+.main-info article {
+    flex: 0 0 70%;
+}
+
+.main-info article h2 {
+    font-size: 36px;
+}
+
+.main-info article p {
+    width: 90%;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 20px;
+}
+
+.main-info aside {
+    background-color: #ffffff;
+    flex: 0 0 30%;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 20px 0 0 20px;
+    transition: all 0.5s ease;
+}
+
+aside:hover {
+    transform: scale(1.03);
+}
+
+.main-info aside h3 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.main-info aside ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.main-info aside ul li {
+    margin-bottom: 10px;
+}
+
+.main-info aside ul li a,
+.main-info aside ul li link {
+    text-decoration: none;
+    color: #3f579d;
+    font-weight: 500;
+}
+
+.main-info aside p {
+    font-size: 12px;
+    color: gray;
+    margin: 20px 10px 0 0;
+}
+
+/* ---------------- Main logo ---------------- */
+
+.main-logo {
+    position: relative;
+    height: 500px;
+    width: 72%;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.5s ease;
+}
+
+.main-logo .main-text {
+    margin-left: 50px;
+}
+
+.main-logo p {
+    margin-top: 60px;
+}
+
+.main-logo .button {
+    width: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.main-logo .button a {
+    font-size: 20px;
+}
+
+.main-logo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("/img/img-background.jpg") center/cover no-repeat;
+    opacity: 0.8;
+    z-index: -1;
+    border-radius: 12px;
+    transition: transform 0.6s ease;
+}
+
+.main-logo:hover {
+    transform: scale(1.03);
+}
+
+.main-logo:hover::before {
+    transform: scale(1.03);
+}
+
+/* ---------------- Language info ---------------- */
+
+#language-info {
+    margin: 120px auto 0;
+    text-align: center;
+}
+
+#language-info h2 {
+    font-size: 36px;
+}
+
+#language-info p {
+    width: 90%;
+    margin: 0px auto;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+#language-info a,
+#language-info link {
+    text-decoration: none;
+    color: #3f579d;
+    font-weight: 500;
+}
+
+/* ---------------- Table ---------------- */
+
+table {
+    width: 80%;
+    margin: 0px auto 12px;
+    border-collapse: collapse;
+}
+
+.table {
+    transition: transform 0.4s ease;
+}
+
+.table:hover {
+    transform: translateX(2vw);
+}
+
+table caption {
+    font-size: 24px;
+    margin: 40px 0 12px;
+}
+
+.study-table {
+  border-collapse: collapse;
+}
+
+.study-table td,
+.study-table th {
+  padding: 8px;
+  border: 1px solid #000;
+}
+
+/* ---------------- Footer ---------------- */
+
+footer p {
+    background-color: #000000;
+    color: white;
+    padding: 20px 0;
+    margin: 120px 0 0 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    margin-top: 10;
+}
+
+/* ---------------- Contacts ---------------- */
+
+#contacts-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+#contacts-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#contacts-info button {
+    margin: 10px 0;
+}
+
+#contacts-info ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+#contacts-info img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 100%;
+    transition: box-shadow 0.3s ease;
+    transition-delay: 2s;
+}
+
+#contacts-info img:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+/* ---------------- Educational topics ---------------- */
+
+.educational-topics {
+    margin: 100px auto 0px;
+}
+
+.topics-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    margin: 0 40px;
+}
+
+.topic {
+    background-color: #ffffff;
+    border: 2px solid transparent;
+    border-left: 2px dashed #4B0082;
+    border-right: 1px solid #4B0082;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.topic h3 {
+    font-weight: 700;
+    font-size: 1.4em;
+    font-style: italic;
+    color: #4B0082;
+    margin-bottom: 10px;
+}
+
+.educational-topics img {
+    max-width: 70%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+    transition: filter 0.5s ease;
+}
+
+.topic img:hover {
+    filter: saturate(1.5);
+}
+
+/* ---------------- Feedback form ---------------- */
+
+.form-feedback {
+    display: block;
+    margin: 16px;
+}
+
+.form-feedback form {
+    margin-top: 16px;
+}
+
+/* Tooltip */
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #888;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    font-size: 14px;
+    max-width: 200px;
+    z-index: 10;
+}
+
+/* textarea hover class */
+.highlight {
+    background-color: #ffffe0;
+    border: 2px solid #ffa500;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+/* Search input */
+#searchInput {
+    display: block;
+    margin: 20px auto 40px auto;
+    width: 60%;
+    max-width: 500px;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #4B0082;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#searchInput:focus {
+    border-color: #3f579d;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Accordion */
+.accordion-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.accordion {
+    background-color: #4B0082;
+    color: #fff;
+    cursor: pointer;
+    padding: 14px 28px;
+    width: 250px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+}
+
+.accordion:hover {
+    background-color: #3f579d;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Accordion panel */
+.panel {
+    margin-top: 10px;
+    background-color: #f0f3fc;
+    border-radius: 12px;
+    padding: 15px;
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.panel ul {
+    list-style: none;
+    padding: 0;
+}
+
+.panel ul li {
+    margin-bottom: 8px;
+}
+
+.panel ul li a {
+    text-decoration: none;
+    color: #4B0082;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.panel ul li a:hover {
+    color: #3f579d;
+}
+
+.panel ul li p {
+    font-size: 14px;
+    color: #333;
+    margin: 4px 0 0 0;
+}
+
+/* ---------------- Modal ---------------- */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #4B0082;
+}
+
+.modal-content ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.modal-content button {
+    background-color: #b6c4ed;
+    color: #3f579d;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.modal-content button:hover {
+    background-color: #3f579d;
+    color: #fff;
+}
+
+/* ---------------- Night mode ---------------- */
+
+body.night {
+  filter: brightness(50%);
+  background-color: #111 !important;
+}
